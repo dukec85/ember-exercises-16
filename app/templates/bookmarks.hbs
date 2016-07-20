@@ -1,3 +1,9 @@
+import Ember from 'ember';
+
+export default Ember.Controller.extend({
+  actions
+})
+
 <form {{action "addBookmark" on="submit"}}>
   <label>Bookmark</label>
   {{input class="bookmark-submit" type="text" value=bookmark}}

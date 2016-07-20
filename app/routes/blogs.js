@@ -1,5 +1,5 @@
 
-mport Ember from 'ember';
+import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
