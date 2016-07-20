@@ -18,6 +18,14 @@ export default Ember.Controller.extend({
           method: 'post',
           body: JSON.stringify(data),
         });
+    },
+
+    addBookmark() {
+      const data = {
+        nickname: this.nickname,
+        url: this.url
+      };
+
     }
   }
 });

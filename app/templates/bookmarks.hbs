@@ -1,1 +1,9 @@
+<form {{action "addBookmark" on="submit"}}>
+  <label>Bookmark</label>
+  {{input class="bookmark-submit" type="text" value=bookmark}}
+<button>submit</button>
+</form>
+{{#each model as |mark|}}
+  <h3>{{mark.bookmark}}</h3>
+{{/each}}
 {{outlet}}
