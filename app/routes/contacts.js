@@ -1,4 +1,8 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
+export default Ember.Route.extend({
+  model() {
+    return fetch('https://tiny-tn.herokuapp.com/collections/cd-contacts')
+      .then((res) => res.json());
+  }
 });
