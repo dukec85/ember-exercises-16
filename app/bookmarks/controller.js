@@ -4,8 +4,7 @@ export default Ember.Controller.extend({
   actions: {
     addBookmark() {
       const data = {
-        nickname: this.nickname,
-        url: this.url
+        bookmark: this.bookmark,
       };
 
       fetch('https://tiny-tn.herokuapp.com/collections/cd-bookmarks', {

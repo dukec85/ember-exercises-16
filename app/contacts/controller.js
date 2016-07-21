@@ -35,7 +35,7 @@ export default Ember.Controller.extend({
 
     deleteContact(person) {
       if (confirm('Are you sure you want to delete?')) {
-        fetch('https://tiny-tn.herokuapp.com/collections/cd-contacts' + person._id, {
+        fetch('https://tiny-tn.herokuapp.com/collections/cd-contacts/' + person._id, {
           method: 'Delete',
         }).then(() => {
           const updatedList = this.model.filter((item) => {
