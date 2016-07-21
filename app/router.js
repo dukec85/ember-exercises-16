@@ -12,4 +12,3 @@ Router.map(function() {
 });
 
 export default Router;
-Contact GitHub API Training Shop Blog About
